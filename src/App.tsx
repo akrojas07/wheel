@@ -10,7 +10,7 @@ function App() {
       <header>
         <h1>Wheel of dates!</h1>
       </header>
-      <body>
+      <body className='body'>
         <WheelView />
         <InputForm inputs={dates}/>
       </body>

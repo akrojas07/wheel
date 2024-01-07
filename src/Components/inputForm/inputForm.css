@@ -1,0 +1,8 @@
+.inputformbox {
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
