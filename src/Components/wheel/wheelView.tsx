@@ -1,6 +1,8 @@
+import './wheel.css';
+
 // Wheel placeholder
 function WheelView () {
-    return <>I'm a wheel</>
+    return <div className='wheel'>I'm a wheel</div>
 }
 
 export default WheelView;
