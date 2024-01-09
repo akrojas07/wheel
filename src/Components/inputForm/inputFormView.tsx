@@ -1,9 +1,9 @@
-import { IInputType } from "../../utils/customTypes";
+import { IGlobalInputState } from '../../utils/globalStateProvider';
 import './inputForm.css';
 
-export default function InputForm ({inputs}: IInputType) {
+export default function InputFormView ({inputs}: IGlobalInputState) {
     return(
-        <div contentEditable="true" className="inputformbox">
+        <div contentEditable className="inputformbox">
             {inputs.map(input => {
                return (
                 <p>{input}</p>

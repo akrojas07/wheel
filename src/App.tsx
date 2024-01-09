@@ -1,18 +1,19 @@
 import './App.css';
-import WheelView from './Components/wheel/wheelView';
-import InputForm from './Components/inputForm/inputFormView';
+import InputFormContainer from './Components/inputForm/inputFormContainer';
+import WheelContainer from './Components/wheel/wheelContainers';
+import { GlobalInputStateProvider } from './utils/globalStateProvider';
 
 function App() {
-  // temp hard coded data
-  const dates: string[] = ['Big Sur', 'Camp Pendleton']
   return (
     <div className="App">
       <header>
-        <h1>Wheel of dates!</h1>
+        <h1>Wheel of trips!</h1>
       </header>
       <body className='body'>
-        <WheelView />
-        <InputForm inputs={dates}/>
+        <GlobalInputStateProvider>
+          <WheelContainer />
+          <InputFormContainer />
+        </GlobalInputStateProvider>
       </body>
     </div>
   );
