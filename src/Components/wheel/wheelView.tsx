@@ -1,6 +1,13 @@
+import './wheel.css';
+import { IGlobalInputState } from '../../utils/globalStateProvider';
+
 // Wheel placeholder
-function WheelView () {
-    return <>I'm a wheel</>
+function WheelView ({inputs}: IGlobalInputState) {
+    return (    
+    <canvas>
+        {inputs}
+    </canvas>
+    )
 }
 
 export default WheelView;

@@ -13,8 +13,9 @@
 2. Ability to insert, update, or remove items
     - Store inputs in an array to be able to track changes  
     - Create a form to receive inputs
-    - Display list of existing inputs with icons to update or remove 
+    - Display list of existing inputs
         - Update or removal of item should be reflected in wheel immediately
+        - Update or remove item in its container
 
 3. Randomized selection of item
     - Randomization algo that selects from the existing items in the array
