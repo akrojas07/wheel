@@ -7,7 +7,7 @@ export default function InputFormContainer(){
     const {inputState, setInputState} = useGlobalInputState();
       // starter trips
     const trips: Partial<IGlobalInputState> = {
-        inputs: ['Big Sur', 'Camp Pendleton', 'Catalina', 'Palm Springs', 'San Francisco']
+        inputs: ['Big Sur<br> Camp Pendelton', 'Camp Pendleton', 'Catalina', 'Palm Springs', 'San Francisco']
     }
     
     useEffect(() =>{
@@ -15,7 +15,8 @@ export default function InputFormContainer(){
     }, []);
 
     let inputValues = inputState.inputs? inputState.inputs! : trips.inputs;
-    
+    //on user change, update string to include new line item 
+
     return (
         <InputFormView inputs={inputValues!}/>
     )
