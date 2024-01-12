@@ -1,7 +1,11 @@
 import React, { Dispatch, SetStateAction, createContext, useContext, useState } from 'react';
+import { ContentEditableEvent } from 'react-contenteditable';
 
 export interface IGlobalInputState{
     inputs: string[];
+    input?: string;
+    toRef?: any;
+    onChange?: (event: ContentEditableEvent) => void
 }
 
 
