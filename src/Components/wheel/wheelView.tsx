@@ -3,10 +3,16 @@ import { IGlobalInputState } from '../../utils/globalStateProvider';
 
 // Wheel placeholder
 function WheelView ({inputs}: IGlobalInputState) {
-    return (    
-    <canvas>
-        {inputs}
-    </canvas>
+    return (
+        <>        
+            <div className='limited'>
+            {inputs}
+            </div>
+            <canvas>
+                {inputs}
+            </canvas>
+        </>    
+
     )
 }
 

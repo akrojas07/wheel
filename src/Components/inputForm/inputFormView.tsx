@@ -1,14 +1,11 @@
+import ContentEditable from 'react-contenteditable'
 import { IGlobalInputState } from '../../utils/globalStateProvider';
 import './inputForm.css';
 
-export default function InputFormView ({inputs}: IGlobalInputState) {
+export default function InputFormView ({input, onChange}: IGlobalInputState) {
     return(
-        <div contentEditable className="inputformbox">
-            {inputs.map(input => {
-               return (
-                <p>{input}</p>
-               )
-            })}
-        </div>
+        <>
+            <ContentEditable html={input!} onChange={onChange!} className="inputformbox" />
+        </>
     )
 }
