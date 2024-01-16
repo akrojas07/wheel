@@ -16,3 +16,7 @@ canvas{
     left: 50%;
     margin: -60px 0px 0px -50px;
 }
+
+.limited{
+    max-width: 25%;
+}

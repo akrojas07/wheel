@@ -5,7 +5,9 @@ import { IGlobalInputState } from '../../utils/globalStateProvider';
 function WheelView ({inputs}: IGlobalInputState) {
     return (
         <>        
+            <div className='limited'>
             {inputs}
+            </div>
             <canvas>
                 {inputs}
             </canvas>
