@@ -9,8 +9,8 @@ export default function InputFormContainer(){
     const trips: Partial<IGlobalInputState> = {
         inputs: ['Big Sur', 'Camp Pendleton', 'Catalina', 'Palm Springs', 'San Francisco']
     }
-
-    const [additionalInput, setAdditionalInput] = useState(trips.inputs!.toString());
+    
+    const [additionalInput, setAdditionalInput] = useState(trips.inputs!.toString().replaceAll(',', '<br>'));
 
     function onInputChange(event: ContentEditableEvent){
         setAdditionalInput(event.target.value);
